@@ -11,8 +11,15 @@ zlib and xz (liblzma), all under permissive licences.
 
 ## What is here
 
-The [release](../../releases) has one source bundle per platform (`linux64`, `linuxarm64`,
-`win64`, `winarm64`) and a `SHA256SUMS` file. Each `…-source.tar` contains:
+Each release holds one source bundle per platform (`linux64`, `linuxarm64`, `win64`, `winarm64`)
+and a `SHA256SUMS` file. Use the release that matches the programs you have:
+
+- **`rev5`** (current): the builds with the Dolby/DTS audio, speech and proprietary audio, and
+  professional video decoders removed. Its bundles are `ffmpeg-<platform>-8.1.3-fileforge5-source.tar`.
+- **`rev4`**: the earlier builds, with those decoders still in. Its bundles are
+  `ffmpeg-<platform>-8.1.3-fileforge4-source.tar`.
+
+Each bundle's `REBUILD.txt` says how to rebuild it and what the removed decoders are. Each `…-source.tar` contains:
 
 - `ffmpeg-n8.1.3.tar.xz`: FFmpeg's source at that tag;
 - `lame-r6835.tar.xz`: LAME's full source (SVN revision 6835);
